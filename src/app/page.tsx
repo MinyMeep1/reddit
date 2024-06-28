@@ -1,10 +1,16 @@
-import Image from "next/image";
-import Navbar from "../components/navbar";
+"use client";
+
+
+import Navbar from "./navbar/navbar";
+import Signup from "./signup/page"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main>
       <Navbar/>
+    
+      <Signup/>
     </main>
+    
   );
 }
